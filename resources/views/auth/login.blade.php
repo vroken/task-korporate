@@ -1,11 +1,11 @@
 
-@extends('layouts.app')
+@extends('layouts.auth')
 @section('content')
 {{-- message --}}
 {{-- {!! Toastr::message() !!} --}}
 <div class="login-right">
     <div class="login-right-wrap">
-        <h1>Silahkan Login!</h1>
+        <h1>Login Akun!</h1>
         <p class="account-subtitle">Belum punya akun? <a href="{{ route('register') }}">Daftar Akun</a></p>
         <form action="{{ route('login') }}" method="POST">
             @csrf
@@ -26,7 +26,6 @@
                         <span class="checkmark"></span>
                     </label>
                 </div>
-                <a href="forgot-password.html">Forgot Password?</a>
             </div>
             <div class="form-group">
                 <button class="btn btn-primary btn-block" type="submit">Login</button>
