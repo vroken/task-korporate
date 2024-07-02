@@ -111,7 +111,7 @@
                     class="feather-x-circle"></i>
                 </button>
             </div>
-            <div class="modal-body">
+            {{-- <div class="modal-body">
                 @foreach ($tasks as $task)
                     
                 <form action="{{ route('user/delete', ['id' => $task->id]) }}" method="POST">
@@ -133,7 +133,7 @@
                     </div>
                 </form>
 
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
